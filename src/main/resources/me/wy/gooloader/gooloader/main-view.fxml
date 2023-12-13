@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar fx:id="menuBar">
+        <menus>
+          <Menu fx:id="fileMenu" mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="closeButton" mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="helpMenu" mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="aboutButton" mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <center>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <center>
+                  <SplitPane dividerPositions="0.8" orientation="VERTICAL">
+                     <items>
+                        <TableView id="addinsList" />
+                        <ScrollPane prefHeight="75.0" prefWidth="200.0">
+                           <content>
+                              <Label id="desclabel" fx:id="desclabel">
+                                 <font>
+                                    <Font name="SansSerif Regular" size="20.0" />
+                                 </font>
+                              </Label>
+                           </content>
+                        </ScrollPane>
+                     </items>
+                  </SplitPane>
+               </center>
+            </BorderPane>
+         </center>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <bottom>
+            <VBox prefHeight="50.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="progressLabel" text="Ready!" />
+                  <ProgressBar fx:id="progressBar" minHeight="10.0" prefHeight="10.0" prefWidth="800.0" progress="0.0" />
+                  <ButtonBar prefHeight="40.0" prefWidth="200.0">
+                     <buttons>
+                      <Button fx:id="save" mnemonicParsing="false" text="Save" />
+                        <Button fx:id="saveAndPlay" layoutX="535.0" layoutY="18.0" mnemonicParsing="false" text="Save and Play" />
+                     </buttons>
+                  </ButtonBar>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</VBox>

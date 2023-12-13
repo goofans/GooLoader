@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import me.wy.gooloader.gooloader.util.RGBButton?>
+<BorderPane prefHeight="450.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.wy.gooloader.gooloader.AboutController">
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+   <top>
+    <Label text="About GooLoader" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <Label text="The lore: So it's been 2 years since the 2019 update came out and GooTool still hasn't been updated to support it. I decided to make this as a solution while we wait for GooTool if it'll ever be updated. My goal with this project is to make modding on the new version as simple as it was with GooTool and to make it more accessible to newcomers in the community.  &#13;&#13;&#13;Made with love by Watching YouTube" wrapText="true" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <right>
+            <RGBButton fx:id="goofansButton" mnemonicParsing="false" text="Check out my other &#13;stuff on Goofans" BorderPane.alignment="CENTER" />
+         </right>
+      </BorderPane>
+   </bottom>
+</BorderPane>

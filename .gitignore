@@ -1,0 +1,6 @@
+/target/*
+.idea/*
+.gooloader/*
+*.exe
+*.class
+
